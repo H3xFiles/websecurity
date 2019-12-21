@@ -42,3 +42,7 @@ Configuration browser
 ```
 Intercept under proxy tab in Burp -> action send to repeater -> change admin from ```False``` to ```True``` click on send. 
 Copy the cookie in the browser, turn of intercepter under proxy, and login into the admin pannel. 
+
+Change role
+``` https://insecure-website.com/login/home.jsp?role=1 ```
+to change the role, update the email, from proxy sen to the repeater and you will see the role in json body as response, then update the json and resend it. Turn off proxy and go to main page and complete the task. 
